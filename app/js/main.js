@@ -18,3 +18,11 @@ import * as UTIL from './modules/util-others.js'
 // UTIL.getRandomNumber()
 // UTIL.shuffleArr()
 
+UI.burger()
+
+
+all('.should-hidden').forEach(e => {
+	e.cloneNode(true)
+
+	console.log(e)
+})

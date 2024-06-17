@@ -17,7 +17,6 @@
 @media (max-width: 420px) {
 }
 
-
 // ! container
 @media (max-width: 1200px) {
   .container {
@@ -27,6 +26,17 @@
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+  .nav {
+    gap: 28px;
+    & > * {
+      flex: 0 0 100%;
+      justify-content: center;
+    }
+    .logo {
+      order: -1;
+      text-align: center;
+    }
   }
 }
 @media (max-width: 768px) {
@@ -38,6 +48,28 @@
   .container {
     max-width: 100%;
     padding: 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    .burger {
+      display: flex;
+      gap: 10px;
+      &::after {
+        content: 'Menu';
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    &__items,
+    &__icons {
+      display: none;
+    }
+    .should-hidden {
+      &--active {
+        position: absolute;
+      }
+    }
   }
 }
 @media (max-width: 360px) {

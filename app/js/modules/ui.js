@@ -3,7 +3,9 @@ import { s, all } from "./base.js"
 // @ burger
 const burger = () => {
 	s('.burger').addEventListener('click', (evt) => {
-		s('.should-hidden').classList.toggle('should-hidden--active')
+		all('.should-hidden').forEach(e => {
+			e.classList.toggle('should-hidden--active')
+		})
 	})
 }
 

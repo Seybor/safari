@@ -2,12 +2,12 @@
   --root-text: 16px;
 
   --gap: 0px;
-  --opacity: 0.75;
+  --opacity: 0.5;
 }
 :root,
 [data-theme='light'] {
-  --accent: #ffa500;
-  --regular: #272727;
+  --accent: #ed165f;
+  --regular: #000;
 }
 
 [data-theme='dark'] {
