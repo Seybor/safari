@@ -3,9 +3,7 @@ import { s, all } from "./base.js"
 // @ burger
 const burger = () => {
 	s('.burger').addEventListener('click', (evt) => {
-		all('.should-hidden').forEach(e => {
-			e.classList.toggle('should-hidden--active')
-		})
+		s('.header__menu').classList.toggle('header__menu--active')
 	})
 }
 

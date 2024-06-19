@@ -93,6 +93,9 @@ a {
   font-size: 2rem;
 }
 .logo {
+  position: relative;
+  z-index: 10000;
+
   width: auto;
   height: auto;
 }
