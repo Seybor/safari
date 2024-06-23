@@ -81,39 +81,44 @@
 
 	<!--include section.html  -->
 
-	<section class="top-slider" style="background-image: url(img/logo-big.svg);">
+	<section class="top-slider">
 		<div class="container">
-			<div class="itc-slider">
-				<div class="itc-slider-wrapper">
-					<div class="itc-slider-items">
-						<div class="itc-slider-item">
-							<img class="top-slider__img" src="img/top-slider/2.png" alt="slide 1">
-						</div>
-						<div class="itc-slider-item">
-							<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
-						</div>
-						<div class="itc-slider-item">
-							<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
-						</div>
-						<div class="itc-slider-item">
-							<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
+			<div class="top-slider__inner" style="background-image: url(img/logo-big.svg);">
+				<div class="itc-slider">
+					<div class="itc-slider-wrapper">
+						<div class="itc-slider-items">
+							<div class="itc-slider-item">
+								<img class="top-slider__img" src="img/top-slider/2.png" alt="slide 1">
+							</div>
+							<div class="itc-slider-item">
+								<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
+							</div>
+							<div class="itc-slider-item">
+								<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
+							</div>
+							<div class="itc-slider-item">
+								<img class="top-slider__img" src="img/top-slider/1.png" alt="slide 1">
+							</div>
 						</div>
 					</div>
+					<!-- dots - должно быть столько же, сколько слайдов -->
+					<ol class="itc-slider-indicators">
+						<li class="itc-slider-indicator" data-slide-to="0"></li>
+						<li class="itc-slider-indicator" data-slide-to="1"></li>
+						<li class="itc-slider-indicator" data-slide-to="2"></li>
+						<li class="itc-slider-indicator" data-slide-to="3"></li>
+					</ol>
 				</div>
-				<!-- dots - должно быть столько же, сколько слайдов -->
-				<ol class="itc-slider-indicators">
-					<li class="itc-slider-indicator" data-slide-to="0"></li>
-					<li class="itc-slider-indicator" data-slide-to="1"></li>
-					<li class="itc-slider-indicator" data-slide-to="2"></li>
-					<li class="itc-slider-indicator" data-slide-to="3"></li>
-				</ol>
-			</div>
-			<div class="top-slider__bottom">
-				<p>Explore our collection</p>
-				<img src="img/icon/arrow.svg" alt="arrow" width="23" height="26">
+				<div class="top-slider__bottom">
+					<p>Explore our collection</p>
+					<img class="top-slider__bottom-img animate__animated animate__fadeInDown animate__infinite animate__slow"
+						src="img/icon/arrow.svg" alt="arrow" width="23" height="26">
+				</div>
 			</div>
 		</div>
 	</section>
+
+
 
 </main>
 
@@ -125,6 +130,168 @@
 
 
 		<div class="footer__inner">
+
+
+			<a class="logo footer__logo" href="index.html">
+
+
+				<img class="logo__img" src="img/logo.svg" alt="logo">
+
+
+			</a>
+
+
+
+
+
+			<ul class="footer__list">
+
+
+				<li class="footer__item">
+
+
+					<a class="footer__item-link" href="#">
+
+
+						About Us
+
+
+					</a>
+
+
+				</li>
+
+
+				<li class="footer__item">
+
+
+					<a class="footer__item-link" href="#">
+
+
+						Contact
+
+
+					</a>
+
+
+				</li>
+
+
+				<li class="footer__item">
+
+
+					<a class="footer__item-link" href="#">
+
+
+						Terms & Conditions
+
+
+					</a>
+
+
+				</li>
+
+
+			</ul>
+
+
+
+
+
+			<div class="footer__social social">
+
+
+				<a class="social__item" href="#">
+
+
+					<img class="social__item-img" src="img/icon/fb.svg" width="14" height="14" alt="facebook">
+
+
+					<p class="social__item-text">Facebook</p>
+
+
+				</a>
+
+
+				<a class="social__item" href="#">
+
+
+					<img class="social__item-img" src="img/icon/x-twitter.svg" width="14" height="14" alt="twitter-x">
+
+
+					<p class="social__item-text">X</p>
+
+
+				</a>
+
+
+				<a class="social__item" href="#">
+
+
+					<img class="social__item-img" src="img/icon/inst.svg" width="14" height="14" alt="instagram">
+
+
+					<p class="social__item-text">Instagram</p>
+
+
+				</a>
+
+
+			</div>
+
+
+
+
+
+			<div class="footer__subsctibe">
+
+
+				<p class="footer__subsctibe-text">
+
+
+					Subscribe to our newsletter
+
+
+				</p>
+
+
+				<form class="footer-form" action="#">
+
+
+					<div class="footer-form__inner">
+
+
+						<input class="footer-form__input" type="email" placeholder="Email Address" required><button
+
+
+							class="footer-form__btn btn" type="submit">ОК</button>
+
+
+					</div>
+
+
+				</form>
+
+
+			</div>
+
+
+
+
+
+			<div class="footer__address">
+
+
+				<p class="footer__address-text">497 Evergreen Rd.Roseville, CA 95673</p>
+
+
+				<a class="footer__address-tel" href="tel:+44345678903">+44 345 678 903</a>
+
+
+				<a class="footer__address-mail" href="mailto:adobexd@mail.com">adobexd@mail.com</a>
+
+
+			</div>
 
 
 
