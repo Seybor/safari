@@ -18,6 +18,12 @@
       text-align: center;
     }
   }
+  .shop-items {
+    row-gap: 90px;
+  }
+  .shop-item {
+    flex: 0 0 31%;
+  }
   .footer {
     &__logo {
       grid-column: span 2;
@@ -48,6 +54,12 @@
   }
 }
 @media (max-width: 768px) {
+  .shop-items {
+    row-gap: 75px;
+  }
+  .shop-item {
+    flex: 0 0 47.5%;
+  }
 }
 @media (max-width: 576px) {
   .top-slider {
@@ -59,6 +71,13 @@
       max-height: 400px;
       min-height: 300px;
     }
+  }
+  .shop-items {
+    row-gap: 60px;
+    justify-content: center;
+  }
+  .shop-item {
+    flex: 0 0 auto;
   }
   .footer {
     &__logo {
@@ -99,6 +118,15 @@
       &--active {
         position: absolute;
       }
+    }
+  }
+  .shop {
+    &__title {
+      font-size: 32px;
+      display: block;
+    }
+    &__about {
+      font-size: 22px;
     }
   }
 }

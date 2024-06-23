@@ -3,6 +3,8 @@ import * as UI from './modules/ui.js'
 import * as DOM from './modules/util-dom.js'
 import * as UTIL from './modules/util-others.js'
 
+import renderStart from './modules/renderGoods.js'
+
 // $('body').hide()
 
 // UI.changeTheme()
@@ -20,6 +22,8 @@ import * as UTIL from './modules/util-others.js'
 
 let element = document.createElement('div')
 element.classList.add('header__menu')
+
+renderStart()
 
 all('.should-hidden').forEach(e => {
 	let clone = e.cloneNode(true)
@@ -43,6 +47,21 @@ window.addEventListener('resize', (evt) => {
 	})
 })()
 
+
+
+window.addEventListener('scroll', (evt) => {
+	if (window.scrollY > 1200) {
+		s('.up').classList.add('up--active')
+	} else {
+		s('.up').classList.remove('up--active')
+	}
+})
+
+s('.up').addEventListener('click', (evt) => {
+	window.scrollTo(0, 0)
+})
+
+// ! plugins
 ItcSlider.getOrCreateInstance('.itc-slider', {
 	loop: true,
 	swipe: true

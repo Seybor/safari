@@ -181,6 +181,45 @@
   }
 }
 
+.shop {
+  padding: 64px 0 128px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 32px;
+    &::before,
+    &::after {
+      content: '';
+
+      flex: 1 0 auto;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+  &__inner {
+  }
+  &__about {
+    margin-bottom: 60px;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+.shop-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  row-gap: 98px;
+}
+.shop-item {
+  flex: 0 0 22.5%;
+}
+
 .footer {
   padding: 62px 0;
 
