@@ -22,27 +22,192 @@
   flex: 0 0 auto;
   width: calc(25% - 25px);
   &__title {
+    margin-bottom: 32px;
+
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
+
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
   }
 
   &__wrap {
-  }
+    & .filter__chose {
+    }
+    &--category {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      & .filter__chose {
+        margin-bottom: 16px;
 
-  &__chose {
-  }
+        font-size: 16px;
+        font-weight: 600;
+        color: #686868;
 
-  &__label {
-  }
+        cursor: pointer;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &--size {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      & .filter__chose {
+        padding: 6px 12px;
+        flex: 1 0 0;
 
-  &__input {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: center;
+
+        border: 1px solid rgba($color: #000000, $alpha: 0.5);
+
+        cursor: pointer;
+      }
+    }
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 8px;
+      row-gap: 16px;
+
+      & .filter__chose {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+        flex: 0 0 auto;
+        width: calc(33.333333% - 8px);
+
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: left;
+
+        cursor: pointer;
+        &::before {
+          content: '';
+
+          flex: 0 0 auto;
+          width: 28px;
+          height: 28px;
+        }
+        &--beige::before {
+          background-color: #f3ecdb;
+        }
+        &--blue::before {
+          background-color: #465ba3;
+        }
+        &--black::before {
+          background-color: #000;
+        }
+        &--orange::before {
+          background-color: #f07b4e;
+        }
+        &--green::before {
+          background-color: #41854d;
+        }
+        &--brown::before {
+          background-color: #665147;
+        }
+        &--purple::before {
+          background-color: #893d88;
+        }
+        &--gold::before {
+          background-image: linear-gradient(180deg, #f3b121 0%, rgba(255, 203, 90, 0.567708) 53.65%, #ffc954 100%);
+        }
+        &--taupe::before {
+          background-color: #cac1b8;
+        }
+        &--white::before {
+          background-color: #fff;
+          border: 1px solid #000;
+        }
+        &--pink::before {
+          background-color: #f2a1b1;
+        }
+        &--red::before {
+          background-color: #d23c47;
+        }
+      }
+    }
+    &--price {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      & .filter__chose {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      & .filter__label {
+        margin-bottom: 16px;
+
+        cursor: pointer;
+      }
+      & .filter__input {
+        appearance: none;
+
+        width: 25px;
+        height: 25px;
+        margin-right: 16px;
+        padding: 3px;
+
+        border: 1px solid #000;
+        vertical-align: middle;
+
+        background-clip: content-box;
+
+        cursor: pointer;
+        &:checked {
+          background-color: var(--accent);
+        }
+      }
+    }
   }
 }
-.filter-type {
+.filter-type:not(:last-of-type) {
+  margin-bottom: 64px;
 }
 .filter-price {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  &__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+  &__input {
+    flex: 0 0 auto;
+    width: 60px;
+    padding: 4px 8px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    border: 1px solid #000;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
   &__btn {
+    padding: 4px 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 2px;
   }
 }
 

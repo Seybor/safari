@@ -102,7 +102,7 @@
 					<div class="filter">
 						<div class="filter-type">
 							<p class="filter__title">CATEGORY</p>
-							<div class="filter__wrap">
+							<div class="filter__wrap filter__wrap--category">
 								<span class="filter__chose">All</span>
 								<span class="filter__chose">Dresses</span>
 								<span class="filter__chose">Denim</span>
@@ -120,7 +120,7 @@
 						</div>
 						<div class="filter-type">
 							<p class="filter__title">SIZE</p>
-							<div class="filter__wrap">
+							<div class="filter__wrap filter__wrap--size">
 								<span class="filter__chose">XXS</span>
 								<span class="filter__chose">XS</span>
 								<span class="filter__chose">S</span>
@@ -141,47 +141,48 @@
 						</div>
 						<div class="filter-type">
 							<p class="filter__title">COLOR</p>
-							<div class="filter__wrap">
-								<span class="filter__chose">Beige</span>
-								<span class="filter__chose">Blue</span>
-								<span class="filter__chose">Black</span>
-								<span class="filter__chose">Orange</span>
-								<span class="filter__chose">Green</span>
-								<span class="filter__chose">Brown</span>
-								<span class="filter__chose">Purple</span>
-								<span class="filter__chose">Gold</span>
-								<span class="filter__chose">Taupe</span>
-								<span class="filter__chose">White</span>
-								<span class="filter__chose">Pink</span>
-								<span class="filter__chose">Red</span>
+							<div class="filter__wrap filter__wrap--color">
+								<span class="filter__chose filter__chose--beige">Beige</span>
+								<span class="filter__chose filter__chose--blue">Blue</span>
+								<span class="filter__chose filter__chose--black">Black</span>
+								<span class="filter__chose filter__chose--orange">Orange</span>
+								<span class="filter__chose filter__chose--green">Green</span>
+								<span class="filter__chose filter__chose--brown">Brown</span>
+								<span class="filter__chose filter__chose--purple">Purple</span>
+								<span class="filter__chose filter__chose--gold">Gold</span>
+								<span class="filter__chose filter__chose--taupe">Taupe</span>
+								<span class="filter__chose filter__chose--white">White</span>
+								<span class="filter__chose filter__chose--pink">Pink</span>
+								<span class="filter__chose filter__chose--red">Red</span>
 							</div>
 						</div>
 						<div class="filter-type">
 							<p class="filter__title">PRICE</p>
-							<div class="filter__wrap">
+							<div class="filter__wrap filter__wrap--price">
 								<label class="filter__label">
+									<input class="filter__input" type="radio" name="price">
 									₦0 - ₦10,000
-									<input class="filter__input" type="radio" name="price">
 								</label>
 								<label class="filter__label">
+									<input class="filter__input" type="radio" name="price">
 									₦10,000 - ₦20,000
-									<input class="filter__input" type="radio" name="price">
 								</label>
 								<label class="filter__label">
+									<input class="filter__input" type="radio" name="price">
 									₦20,000 - ₦50,000
-									<input class="filter__input" type="radio" name="price">
 								</label>
 								<label class="filter__label">
+									<input class="filter__input" type="radio" name="price">
 									₦50,000 - ₦100,000
-									<input class="filter__input" type="radio" name="price">
 								</label>
 								<label class="filter__label">
-									₦100,000 - ₦200,000
 									<input class="filter__input" type="radio" name="price">
+									₦100,000 - ₦200,000
 								</label>
 								<div class="filter-price">
-									<div>
-										<input type="text" placeholder="₦"> to <input type="text" placeholder="₦">
+									<div class="filter-price__top">
+										<input class="filter-price__input" type="text" placeholder="₦"> to <input
+											class="filter-price__input" type="text" placeholder="₦">
 									</div>
 									<button class="filter-price__btn btn">Apply</button>
 								</div>
