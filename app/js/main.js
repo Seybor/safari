@@ -22,15 +22,12 @@ import renderStart from './modules/renderGoods.js'
 
 let element = document.createElement('div')
 element.classList.add('header__menu')
-
-renderStart()
+s('body').append(element)
 
 all('.should-hidden').forEach(e => {
 	let clone = e.cloneNode(true)
 	element.append(clone)
 })
-
-s('body').append(element)
 
 window.addEventListener('resize', (evt) => {
 	if (window.innerWidth > 480) {
@@ -48,21 +45,29 @@ window.addEventListener('resize', (evt) => {
 })()
 
 
+// ! pages
+if (s('.up')) {
+	window.addEventListener('scroll', (evt) => {
+		if (window.scrollY > 1200) {
+			s('.up').classList.add('up--active')
+		} else {
+			s('.up').classList.remove('up--active')
+		}
+	})
+	s('.up').addEventListener('click', (evt) => {
+		window.scrollTo(0, 0)
+	})
+}
+if (s('.shop-items')) {
+	renderStart()
+}
 
-window.addEventListener('scroll', (evt) => {
-	if (window.scrollY > 1200) {
-		s('.up').classList.add('up--active')
-	} else {
-		s('.up').classList.remove('up--active')
-	}
-})
+// * plugins
 
-s('.up').addEventListener('click', (evt) => {
-	window.scrollTo(0, 0)
-})
+if (s('.top-slider')) {
+	ItcSlider.getOrCreateInstance('.itc-slider', {
+		loop: true,
+		swipe: true
+	});
+}
 
-// ! plugins
-ItcSlider.getOrCreateInstance('.itc-slider', {
-	loop: true,
-	swipe: true
-});

@@ -182,7 +182,7 @@
 }
 
 .shop {
-  padding: 64px 0 128px;
+  padding: 64px 0 0;
   &__title {
     display: flex;
     align-items: center;
@@ -213,7 +213,6 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  margin-bottom: 120px;
   row-gap: 98px;
 }
 .shop-item {

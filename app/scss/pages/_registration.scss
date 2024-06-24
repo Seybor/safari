@@ -1,0 +1,117 @@
+.account {
+  padding: 64px 0 220px;
+  &__inner {
+    padding: 0 76px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 64px;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+}
+.account-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.account-sign {
+  flex: 0 0 41.5%;
+  &__text {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+}
+.account-create {
+  flex: 0 0 41.5%;
+  &__text {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+}
+
+.account-form {
+  &__wrap {
+    margin-bottom: 32px;
+    &:has(input[type='checkbox']) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      & input {
+        width: auto;
+      }
+      & label {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__input {
+    width: 100%;
+    padding: 20px 12px;
+
+    border: 1px solid #000000;
+    border-radius: 6px;
+
+    font-size: 14px;
+    line-height: 18px;
+    &[type='checkbox'] {
+      accent-color: var(--accent);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__link.account-form__link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .account {
+    padding: 64px 0 128px;
+  }
+  .account-wrap {
+    display: block;
+  }
+  .account-sign {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .account {
+    &__inner {
+      padding: 0 32px;
+    }
+  }
+}

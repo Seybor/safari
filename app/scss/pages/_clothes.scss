@@ -1,0 +1,58 @@
+.clothes {
+  padding: 88px 0 0;
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+}
+.clothes-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.filter {
+  flex: 0 0 auto;
+  width: calc(25% - 25px);
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__wrap {
+  }
+
+  &__chose {
+  }
+
+  &__label {
+  }
+
+  &__input {
+  }
+}
+.filter-type {
+}
+.filter-price {
+  &__btn {
+  }
+}
+
+.clothes-goods {
+  flex: 0 0 auto;
+  width: calc(75% - 25px);
+
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+  &__sort {
+  }
+}
+.clothes-items {
+}
