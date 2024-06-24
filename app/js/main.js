@@ -3,7 +3,10 @@ import * as UI from './modules/ui.js'
 import * as DOM from './modules/util-dom.js'
 import * as UTIL from './modules/util-others.js'
 
-import renderStart from './modules/renderGoods.js'
+
+import getPath from './modules/path.js'
+import getIndexPage from './pages/index.js'
+import getClothesPage from './pages/clothes.js'
 
 // $('body').hide()
 
@@ -19,6 +22,10 @@ import renderStart from './modules/renderGoods.js'
 // UTIL.generateRandomNumbers()
 // UTIL.getRandomNumber()
 // UTIL.shuffleArr()
+
+getPath()
+
+
 
 let element = document.createElement('div')
 element.classList.add('header__menu')
@@ -45,8 +52,8 @@ window.addEventListener('resize', (evt) => {
 })()
 
 
-// ! pages
 if (s('.up')) {
+
 	window.addEventListener('scroll', (evt) => {
 		if (window.scrollY > 1200) {
 			s('.up').classList.add('up--active')
@@ -58,16 +65,7 @@ if (s('.up')) {
 		window.scrollTo(0, 0)
 	})
 }
-if (s('.shop-items')) {
-	renderStart()
-}
 
-// * plugins
-
-if (s('.top-slider')) {
-	ItcSlider.getOrCreateInstance('.itc-slider', {
-		loop: true,
-		swipe: true
-	});
-}
+getIndexPage()
+getClothesPage()
 
