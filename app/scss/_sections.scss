@@ -2,10 +2,12 @@
   padding: 15px;
 
   background-color: #f5f5f5;
+
   &__menu {
     position: absolute;
     inset: 0;
-    right: 100px;
+    left: 100px;
+    z-index: 5000;
 
     min-height: 540px;
     display: flex;
@@ -15,13 +17,13 @@
     align-items: center;
     gap: 20px;
 
-    background-color: rgb(0 0 0 / 50%);
+    background-color: rgb(0 0 0 / 75%);
 
     text-align: center;
     color: #fff;
 
     transition: all 0.2s linear;
-    transform: translateX(-200%);
+    transform: translateY(-200%);
     &--active {
       transform: translateX(0);
     }

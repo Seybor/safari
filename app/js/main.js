@@ -24,8 +24,6 @@ import getIndexPage from './pages/index.js'
 
 getPath()
 
-
-
 let element = document.createElement('div')
 element.classList.add('header__menu')
 s('body').append(element)
@@ -35,21 +33,34 @@ all('.should-hidden').forEach(e => {
 	element.append(clone)
 })
 
+
+s('.burger').addEventListener('click', (evt) => {
+	s('.header__menu').classList.toggle('header__menu--active')
+	s('.burger').classList.toggle('burger--active')
+
+})
+
+document.addEventListener('click', (evt) => {
+
+	if (!evt.target.closest('.header__menu--active') && !evt.target.closest('.burger')) {
+		s('.header__menu').classList.remove('header__menu--active')
+		s('.burger').classList.remove('burger--active')
+	}
+})
+
 window.addEventListener('resize', (evt) => {
 	if (window.innerWidth > 480) {
 		s('.header__menu').classList.remove('header__menu--active')
 		s('.burger').classList.remove('burger--active')
 	}
-
 });
 
-(function () {
-	s('.burger').addEventListener('click', (evt) => {
-		s('.header__menu').classList.toggle('header__menu--active')
-		s('.burger').classList.toggle('burger--active')
-	})
-})()
-
+window.addEventListener('scroll', (evt) => {
+	if (window.scrollY > window.innerHeight) {
+		s('.header__menu').classList.remove('header__menu--active')
+		s('.burger').classList.remove('burger--active')
+	}
+})
 
 if (s('.up')) {
 
@@ -60,9 +71,11 @@ if (s('.up')) {
 			s('.up').classList.remove('up--active')
 		}
 	})
+
 	s('.up').addEventListener('click', (evt) => {
 		window.scrollTo(0, 0)
 	})
+
 }
 
 getIndexPage()
