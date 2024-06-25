@@ -1,4 +1,4 @@
-.account {
+.registration {
   padding: 64px 0 220px;
   &__inner {
     padding: 0 76px;
@@ -20,12 +20,12 @@
     text-align: left;
   }
 }
-.account-wrap {
+.registration-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.account-sign {
+.registration-sign {
   flex: 0 0 41.5%;
   &__text {
     margin-bottom: 32px;
@@ -36,7 +36,7 @@
     text-align: left;
   }
 }
-.account-create {
+.registration-create {
   flex: 0 0 41.5%;
   &__text {
     margin-bottom: 32px;
@@ -48,7 +48,7 @@
   }
 }
 
-.account-form {
+.registration-form {
   &__wrap {
     margin-bottom: 32px;
     &:has(input[type='checkbox']) {
@@ -90,7 +90,7 @@
     margin-bottom: 30px;
   }
 
-  &__link.account-form__link {
+  &__link.registration-form__link {
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
@@ -98,18 +98,18 @@
 }
 
 @media (max-width: 768px) {
-  .account {
+  .registration {
     padding: 64px 0 128px;
   }
-  .account-wrap {
+  .registration-wrap {
     display: block;
   }
-  .account-sign {
+  .registration-sign {
     margin-bottom: 32px;
   }
 }
 @media (max-width: 480px) {
-  .account {
+  .registration {
     &__inner {
       padding: 0 32px;
     }
