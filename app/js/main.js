@@ -6,7 +6,6 @@ import * as UTIL from './modules/util-others.js'
 
 import getPath from './modules/path.js'
 import getIndexPage from './pages/index.js'
-import getClothesPage from './pages/clothes.js'
 
 // $('body').hide()
 
@@ -67,5 +66,10 @@ if (s('.up')) {
 }
 
 getIndexPage()
-getClothesPage()
 
+if (s('.filter-btn')) {
+
+	s('.filter-btn').addEventListener('click', (evt) => {
+		s('.filter').classList.toggle('filter--active')
+	})
+}

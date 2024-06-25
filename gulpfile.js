@@ -157,7 +157,8 @@ function images() {
 
 function moduleMin() {
   return src([
-    'app/js/modules/**/*.js'
+    'app/js/modules/**/*.js',
+    'app/js/pages/**/*.js',
   ],
     { base: 'app' }
   ).pipe(uglify())
@@ -176,6 +177,8 @@ function building() {
       'app/manifest.json',
 
       'app/libs/**/*.*',
+
+      'app/js/data/*.json',
     ],
     { base: 'app' }
   ).pipe(dest('dist'))
