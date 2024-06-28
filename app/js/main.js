@@ -6,6 +6,7 @@ import * as UTIL from './modules/util-others.js'
 
 import getPath from './modules/path.js'
 import getIndexPage from './pages/index.js'
+import getAccountPage from './pages/account.js'
 
 // $('body').hide()
 
@@ -56,7 +57,7 @@ window.addEventListener('resize', (evt) => {
 });
 
 window.addEventListener('scroll', (evt) => {
-	if (window.scrollY > window.innerHeight) {
+	if (window.scrollY > (window.innerHeight * 1.5)) {
 		s('.header__menu').classList.remove('header__menu--active')
 		s('.burger').classList.remove('burger--active')
 	}
@@ -86,3 +87,5 @@ if (s('.filter-btn')) {
 		s('.filter').classList.toggle('filter--active')
 	})
 }
+
+getAccountPage()

@@ -1,6 +1,4 @@
-.clothes,
-.shoes,
-.accessories {
+.goods {
   padding: 88px 0 0;
   &__inner {
   }
@@ -15,9 +13,7 @@
     text-transform: uppercase;
   }
 }
-.clothes-wrap,
-.shoes-wrap,
-.accessories-wrap {
+.goods-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -231,9 +227,7 @@
   }
 }
 
-.clothes-goods,
-.shoes-goods,
-.accessories-goods {
+.goods-goods {
   flex: 0 0 auto;
   width: calc(75% - 25px);
   margin-top: -31px;
@@ -254,18 +248,14 @@
   &__select {
   }
 }
-.clothes-items,
-.shoes-items,
-.accessories-items {
+.goods-items {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
   row-gap: 98px;
 }
-.clothes-item,
-.shoes-item,
-.accessories-item {
+.goods-item {
   flex: 0 0 31.5%;
 }
 
@@ -311,9 +301,7 @@
     flex: 0 0 auto;
     width: 47.5%;
   }
-  .clothes-goods,
-  .shoes-goods,
-  .accessories-goods {
+  .goods-goods {
     width: 100%;
   }
 }
@@ -321,20 +309,16 @@
   .filter-type {
     width: 100%;
   }
-  .clothes-item {
+  .goods-item {
     flex: 0 0 47.5%;
   }
 }
 
 @media (max-width: 576px) {
-  .clothes-items,
-  .shoes-items,
-  .accessories-items {
+  .goods-items {
     justify-content: center;
   }
-  .clothes-item,
-  .shoes-item,
-  .accessories-item {
+  .goods-item {
     flex: 0 0 auto;
   }
 }

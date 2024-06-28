@@ -9,9 +9,8 @@
 					<h1 class="title account-dashboard__title">
 						ACCOUNT DASHBOARD
 					</h1>
-
 					<ul class="account-dashboard__list">
-						<li class="account-dashboard__item ">
+						<li class="account-dashboard__item account-dashboard__item--active">
 							<a class="account-dashboard__item-link " href="#">
 								<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -97,7 +96,74 @@
 						SIGN OUT
 					</a>
 				</div>
-				<div class="account-content"></div>
+				<div class="account-content">
+					<div class="info">
+						<p class="info__title">User Information</p>
+						<div class="info-wrap">
+							<form class="info-form" action="#">
+
+								<div class="info-form__left">
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="create-name">First name</label>
+										<input class="info-form__input" name="name" type="text" placeholder="" id="create-name">
+									</div>
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="create-surname">Last name</label>
+										<input class="info-form__input" name="surname" type="text" placeholder="" id="create-surname">
+									</div>
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="sign-email">Email</label>
+										<input class="info-form__input" name="email" type="text" placeholder="" id="sign-email">
+									</div>
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="gender">Gender</label>
+										<select class="info-form__input" name="gender" id="gender">
+											<option hidden></option>
+											<option value="M">M</option>
+											<option value="W">W</option>
+										</select>
+									</div>
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="date">Date of birth</label>
+										<input class="info-form__input" name="date" type="text" placeholder="" id="date">
+									</div>
+
+									<div class="info-form__wrap">
+										<a class="info-form__wrap-link" href="#">Change password</a>
+									</div>
+
+									<div class="info-form__wrap">
+										<input class="info-form__input" name="check" type="checkbox" placeholder="" id="create-checkbox"
+											checked>
+										<label class="info-form__label" for="create-checkbox">Newsletter subsciption</label>
+									</div>
+								</div>
+
+
+								<div class="info-form__right">
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="current-password">Current Password</label>
+										<input class="info-form__input" name="password" type="password" placeholder=""
+											id="current-password">
+									</div>
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="new-password">New password</label>
+										<input class="info-form__input" name="password" type="password" placeholder="" id="new-password">
+									</div>
+
+									<div class="info-form__wrap">
+										<label class="info-form__label" for="confirm-password">Confirm new password</label>
+										<input class="info-form__input" name="password" type="password" placeholder=""
+											id="confirm-password">
+									</div>
+								</div>
+
+								<button class="info-form__btn btn" type="submit">save changes</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</section>
