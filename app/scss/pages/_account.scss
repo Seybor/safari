@@ -191,6 +191,18 @@
 }
 
 @media (max-width: 768px) {
+  .account-dashboard {
+    flex: 0 0 100%;
+    &__item--active {
+      background-color: var(--accent);
+      &::before {
+        content: none;
+      }
+    }
+  }
+  .account-content {
+    flex: 0 0 100%;
+  }
 }
 @media (max-width: 480px) {
 }
