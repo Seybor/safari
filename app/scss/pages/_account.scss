@@ -90,7 +90,6 @@
 }
 
 .info {
-  padding-top: 20px;
   &__title {
     margin-bottom: 32px;
 
@@ -267,6 +266,7 @@
 @media (max-width: 768px) {
   .account-dashboard {
     flex: 0 0 100%;
+    margin-bottom: 32px;
     &__item--active {
       background-color: var(--accent);
       &::before {
