@@ -97,94 +97,10 @@
 					</a>
 				</div>
 				<div class="account-content">
-					<div class="info account-content__type account-content__type--active" data-id="1">
-						<p class="info__title">User Information</p>
-						<div class="info-wrap">
-							<form class="info-form" action="#">
-
-								<div class="info-form__left">
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="create-name">First name</label>
-										<input class="info-form__input" name="name" type="text" placeholder="" id="create-name">
-									</div>
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="create-surname">Last name</label>
-										<input class="info-form__input" name="surname" type="text" placeholder="" id="create-surname">
-									</div>
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="sign-email">Email</label>
-										<input class="info-form__input" name="email" type="text" placeholder="" id="sign-email">
-									</div>
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="gender">Gender</label>
-										<select class="info-form__input" name="gender" id="gender">
-											<option hidden></option>
-											<option value="M">M</option>
-											<option value="W">W</option>
-										</select>
-									</div>
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="date">Date of birth</label>
-										<input class="info-form__input" name="date" type="text" placeholder="" id="date">
-									</div>
-
-									<div class="info-form__wrap">
-										<a class="info-form__wrap-link" href="#">Change password</a>
-									</div>
-
-									<div class="info-form__wrap">
-										<input class="info-form__input" name="check" type="checkbox" placeholder="" id="create-checkbox"
-											checked>
-										<label class="info-form__label" for="create-checkbox">Newsletter subsciption</label>
-									</div>
-								</div>
-
-
-								<div class="info-form__right">
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="current-password">Current Password</label>
-										<input class="info-form__input" name="password" type="password" placeholder=""
-											id="current-password">
-									</div>
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="new-password">New password</label>
-										<input class="info-form__input" name="password" type="password" placeholder="" id="new-password">
-									</div>
-
-									<div class="info-form__wrap">
-										<label class="info-form__label" for="confirm-password">Confirm new password</label>
-										<input class="info-form__input" name="password" type="password" placeholder=""
-											id="confirm-password">
-									</div>
-								</div>
-
-								<button class="info-form__btn btn" type="submit">save changes</button>
-							</form>
-						</div>
-					</div>
-					<div class="address account-content__type" data-id="2">
-						<p class="address__title">Address Book</p>
-						<div class="address__wrap">
-							<div class="address__content">
-								<p class="address__content-text">Default Shipping Address</p>
-								<ul class="address__content-list">
-									<li class="address__content-item">Ayokunle Oriolowo</li>
-									<li class="address__content-item">No 4 Barnawa Close, Barnawa, Kaduna</li>
-									<li class="address__content-item">Kaduna, Kaduna</li>
-									<li class="address__content-item">Nigeria</li>
-									<li class="address__content-item">+234 708 568 5878</li>
-								</ul>
-
-								<div class="address__content-bottom">
-									<button class="address__content-btn" data-btn="1">Edit</button>
-									<button class="address__content-btn" data-btn="2">Delete</button>
-								</div>
-							</div>
-							<button class="address__btn btn">ADD NEW ADDRESS</button>
-						</div>
-					</div>
-					<div class="orders account-content__type" data-id="3">3</div>
-					<div class="favorites account-content__type" data-id="4">4</div>
+					<!--=include components/account-info.html  -->
+					<!--=include components/account-address.html  -->
+					<!--=include components/account-orders.html  -->
+					<!--=include components/account-favorites.html  -->
 				</div>
 			</div>
 		</div>

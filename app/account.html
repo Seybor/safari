@@ -190,7 +190,7 @@
 						<p class="info__title">User Information</p>
 						<div class="info-wrap">
 							<form class="info-form" action="#">
-
+					
 								<div class="info-form__left">
 									<div class="info-form__wrap">
 										<label class="info-form__label" for="create-name">First name</label>
@@ -216,37 +216,34 @@
 										<label class="info-form__label" for="date">Date of birth</label>
 										<input class="info-form__input" name="date" type="text" placeholder="" id="date">
 									</div>
-
+					
 									<div class="info-form__wrap">
 										<a class="info-form__wrap-link" href="#">Change password</a>
 									</div>
-
+					
 									<div class="info-form__wrap">
-										<input class="info-form__input" name="check" type="checkbox" placeholder="" id="create-checkbox"
-											checked>
+										<input class="info-form__input" name="check" type="checkbox" placeholder="" id="create-checkbox" checked>
 										<label class="info-form__label" for="create-checkbox">Newsletter subsciption</label>
 									</div>
 								</div>
-
-
+					
+					
 								<div class="info-form__right">
 									<div class="info-form__wrap">
 										<label class="info-form__label" for="current-password">Current Password</label>
-										<input class="info-form__input" name="password" type="password" placeholder=""
-											id="current-password">
+										<input class="info-form__input" name="password" type="password" placeholder="" id="current-password">
 									</div>
 									<div class="info-form__wrap">
 										<label class="info-form__label" for="new-password">New password</label>
 										<input class="info-form__input" name="password" type="password" placeholder="" id="new-password">
 									</div>
-
+					
 									<div class="info-form__wrap">
 										<label class="info-form__label" for="confirm-password">Confirm new password</label>
-										<input class="info-form__input" name="password" type="password" placeholder=""
-											id="confirm-password">
+										<input class="info-form__input" name="password" type="password" placeholder="" id="confirm-password">
 									</div>
 								</div>
-
+					
 								<button class="info-form__btn btn" type="submit">save changes</button>
 							</form>
 						</div>
@@ -263,7 +260,7 @@
 									<li class="address__content-item">Nigeria</li>
 									<li class="address__content-item">+234 708 568 5878</li>
 								</ul>
-
+					
 								<div class="address__content-bottom">
 									<button class="address__content-btn" data-btn="1">Edit</button>
 									<button class="address__content-btn" data-btn="2">Delete</button>
@@ -272,8 +269,132 @@
 							<button class="address__btn btn">ADD NEW ADDRESS</button>
 						</div>
 					</div>
-					<div class="orders account-content__type" data-id="3">3</div>
-					<div class="favorites account-content__type" data-id="4">4</div>
+					<div class="orders account-content__type" data-id="3">
+						<p class="orders__title">My Orders</p>
+						<div class="orders-delivered">
+							<div class="orders-items">
+								<div class="orders-item">
+					
+									<div class="orders-item__wrap">
+										<div class="orders-item__goods">
+											<div class="orders-item__goods-photo">
+												<img class="orders-item__goods-img" src="img/goods/thumb/1.jpg" alt="shoes">
+												<span class="orders-item__goods-type orders-item__goods-type--delivered">Delivered</span>
+											</div>
+											<div>
+												<p class="orders-item__goods-title">Casual flat loafers</p>
+												<p class="orders-item__goods-size">Size - EU: 36 US: 5.5</p>
+												<p class="orders-item__goods-price">₦ 10,000</p>
+												<p class="orders-item__goods-quantity">Qty: 1</p>
+												<p class="orders-item__goods-deliver">On 20/07/2020</p>
+											</div>
+										</div>
+										<div class="orders-item__payment">
+											<p class="orders-item__payment-title">Payment details</p>
+											<p class="orders-item__payment-text">Item’s total - ₦ 10,000</p>
+											<p class="orders-item__payment-text">Delivery fee - ₦ 2,000</p>
+											<p class="orders-item__payment-text">TOTAL - ₦ 12,000</p>
+										</div>
+										<div class="orders-item__method">
+											<div class="orders-item__method-wrap">
+												<p class="orders-item__method-title">Delivery method</p>
+												<p class="orders-item__method-text">Door delivery</p>
+											</div>
+											<div class="orders-item__method-wrap">
+												<p class="orders-item__method-title">Shipping address</p>
+												<p class="orders-item__method-text">Ayokunle Oriolowo
+													4, Barnawa Close, Barnawa Kaduna.</p>
+											</div>
+										</div>
+									</div>
+					
+									<div class="orders-item__buttons">
+										<button class="orders-item__btn btn">ORDER AGAIN</button>
+										<button class="orders-item__btn orders-item__btn--request btn">REQUEST A RETURN</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="orders-arrive">
+							<div class="orders-items">
+								<div class="orders-item">
+									<div class="orders-item__wrap">
+										<div class="orders-item__goods">
+											<div class="orders-item__goods-photo">
+												<img class="orders-item__goods-img" src="img/goods/thumb/2.jpg" alt="shoes">
+												<span class="orders-item__goods-type orders-item__goods-type--arrive">To arrive</span>
+											</div>
+											<div>
+												<p class="orders-item__goods-title">Multicolored armless top</p>
+												<p class="orders-item__goods-size">Size - XS</p>
+												<p class="orders-item__goods-price">₦ 10,000</p>
+												<p class="orders-item__goods-quantity">Qty: 1</p>
+												<p class="orders-item__goods-deliver">Between 20/07/2020 - 25/07/2020</p>
+											</div>
+										</div>
+										<div class="orders-item__payment">
+											<p class="orders-item__payment-title">Payment details</p>
+											<p class="orders-item__payment-text">Item’s total - ₦ 10,000</p>
+											<p class="orders-item__payment-text">Delivery fee - ₦ 2,000</p>
+											<p class="orders-item__payment-text">TOTAL - ₦ 12,000</p>
+										</div>
+										<div class="orders-item__method">
+											<div class="orders-item__method-wrap">
+												<p class="orders-item__method-title">Delivery method</p>
+												<p class="orders-item__method-text">Door delivery</p>
+											</div>
+											<div class="orders-item__method-wrap">
+												<p class="orders-item__method-title">Shipping address</p>
+												<p class="orders-item__method-text">Ayokunle Oriolowo
+													4, Barnawa Close, Barnawa Kaduna.</p>
+											</div>
+										</div>
+									</div>
+					
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="favorites account-content__type" data-id="4">
+						<p class="favorites__title">My favorites</p>
+						<div class="favorites-items">
+							<div class="favorites-item">
+								<div class="favorites-item__top">
+									<img class="favorites-item__top-img" src="img/goods/thumb/1.jpg" alt="1">
+									<div>
+										<p class="favorites-item__title">Casual flat loafers</p>
+										<p class="favorites-item__size">Size - EU: 36 US: 5.5</p>
+										<p class="favorites-item__price">₦ 10,000</p>
+									</div>
+								</div>
+					
+								<div class="favorites-item__buttons">
+									<button class="favorites-item__btn favorites-item__btn--buy btn">BUY NOW</button>
+									<button class="favorites-item__btn favorites-item__btn--remove">REMOVE</button>
+								</div>
+					
+					
+							</div>
+							<div class="favorites-item">
+								<div class="favorites-item__top">
+									<img class="favorites-item__top-img" src="img/goods/thumb/2.jpg" alt="2">
+									<div>
+										<p class="favorites-item__title">Multicolored armless top</p>
+										<p class="favorites-item__size">Size - XS</p>
+										<p class="favorites-item__price">₦ 10,000</p>
+									</div>
+								</div>
+					
+								<div class="favorites-item__buttons">
+									<button class="favorites-item__btn favorites-item__btn--buy btn">BUY NOW</button>
+									<button class="favorites-item__btn favorites-item__btn--remove">REMOVE</button>
+								</div>
+					
+					
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
